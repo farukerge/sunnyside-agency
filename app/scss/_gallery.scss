@@ -1,0 +1,14 @@
+.gallery {
+  width: 100%;
+  &__photoBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include breakpoint-down(small) {
+      grid-template-columns: 1fr 1fr;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

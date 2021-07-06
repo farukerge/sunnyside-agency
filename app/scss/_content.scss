@@ -1,0 +1,133 @@
+.content {
+  &__text {
+    justify-content: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    @include breakpoint-down(small) {
+      align-items: center;
+      text-align: center;
+    }
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+
+    h1 {
+      color: $Verydarkdesaturatedblue;
+      font-weight: 900;
+      @include breakpoint-down(small) {
+        font-size: 1.6rem;
+      }
+      @include breakpoint-down(medium) {
+        font-size: 1.5rem;
+      }
+    }
+    h2 {
+      color: $Verydarkgrayishblue;
+      font-size: $font-med;
+      width: 63%;
+      line-height: 1.7rem;
+      margin-top: 2rem;
+      @include breakpoint-down(small) {
+        width: 100%;
+        margin-top: 1.6rem;
+        font-size: 1.1rem;
+      }
+      @include breakpoint-down(medium) {
+        font-size: 1.3rem;
+        margin-top: 1.3rem;
+        width: 100%;
+      }
+    }
+    .yellow {
+      background-image: linear-gradient(transparent 65%, $Yellow 0%);
+    }
+    a {
+      color: $Verydarkdesaturatedblue;
+      background-image: linear-gradient(transparent 65%, $Softred 0%);
+      background-repeat: no-repeat;
+      background-size: 100% 250%;
+      background-position: 0% 65%;
+      transition: background-position 0.5s ease 0s;
+      width: 13%;
+      font-weight: 900;
+      text-decoration: none;
+      margin-top: 1rem;
+      @include breakpoint-down(small) {
+        width: 41%;
+      }
+      @include breakpoint-down(medium) {
+        width: 38%;
+      }
+    }
+  }
+
+  &__gallery {
+    img {
+      width: 100%;
+      height: auto;
+      @include breakpoint-down(small) {
+        height: 100%;
+      }
+      @include breakpoint-down(medium) {
+        height: 100%;
+      }
+    }
+  }
+
+  &__card {
+    position: relative;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+      @include breakpoint-down(small) {
+        height: 100%;
+      }
+    }
+
+    .title {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include breakpoint-down(small) {
+        top: 65%;
+      }
+      h1 {
+        color: $Verydarkdesaturatedblue;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+
+    .describe {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include breakpoint-down(small) {
+        top: 85%;
+      }
+      @include breakpoint-down(medium) {
+        top: 86%;
+      }
+      h2 {
+        font-size: 18px;
+        color: $Verydarkgrayishblue;
+        line-height: 1.6rem;
+        @include breakpoint-down(small) {
+          font-size: 14px;
+          line-height: 1.3rem;
+        }
+        @include breakpoint-down(medium) {
+          font-size: 14px;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+}

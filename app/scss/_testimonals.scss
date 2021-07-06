@@ -1,0 +1,65 @@
+.testimonals {
+  min-height: 100%;
+  background-color: #fffbf8;
+  &__headline {
+    h1 {
+      padding: 4rem;
+      text-align: center;
+      color: $Verydarkgrayishblue;
+      font-family: "Fraunces", sans-serif;
+      font-weight: 600;
+      @include breakpoint-down(small) {
+        font-size: $font-lg;
+        padding: 2rem 2rem 0rem 2rem;
+      }
+    }
+  }
+
+  .container {
+    max-width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    @include breakpoint-down(small) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__clients {
+    @include breakpoint-down(small) {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+    img {
+      border-radius: 50%;
+    }
+    .info {
+      h1 {
+        font-size: $font-med;
+        color: $Verydarkgrayishblue;
+        line-height: 2rem;
+        padding: 4rem;
+        font-family: "Barlow", sans-serif;
+        @include breakpoint-down(small) {
+          padding: 1rem;
+          margin-top: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+    .name {
+      h2 {
+        font-size: $font-lg;
+        color: $Verydarkdesaturatedblue;
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+      }
+    }
+    .job-title {
+      h2 {
+        font-size: $font-sm;
+        color: $Grayishblue;
+      }
+    }
+  }
+}

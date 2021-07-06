@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  background-color: $Darkmoderatecyan;
+
+  &__brand-name {
+    margin-top: 4rem;
+    h1 {
+      font-weight: 900;
+      font-family: "Barlow", sans-serif;
+      color: $Darkdesaturatedcyan;
+    }
+  }
+  &__services {
+    margin-top: 2rem;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul li {
+      font-size: $font-lg;
+      font-weight: 600;
+      list-style: none;
+      padding: 2rem;
+      @include breakpoint-down(small) {
+        font-size: $font-med;
+        padding: 1rem;
+      }
+    }
+    ul li a {
+      text-decoration: none;
+      color: $Darkdesaturatedcyan;
+    }
+  }
+  &__contact-icons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    img {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
