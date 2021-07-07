@@ -325,7 +325,7 @@ button:hover,
 
 .hero {
   min-height: 100vh;
-  background-image: url("/images/desktop/image-header.jpg");
+  background-image: url("../image-header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
